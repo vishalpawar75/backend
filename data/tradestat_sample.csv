@@ -1,0 +1,6 @@
+period,direction,hs_code,commodity,country,value_usd,quantity,unit,source
+2024-01,export,0904,Spices (mixed),ARE,52000000,1200,MT,TradeStat
+2024-01,export,1209,Seed vegetables,BGD,38000000,640,MT,TradeStat
+2024-01,export,1006,Basmati rice,VNM,34000000,9800,MT,TradeStat
+2024-01,import,1511,Crude palm oil,IDN,59000000,15400,MT,TradeStat
+2024-01,import,1201,Soybean (feedstock),USA,42000000,7800,MT,TradeStat
