@@ -8,8 +8,9 @@ const { getSummary, hasTradeData, getFilters } = require('./db/tradeRepository')
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const corsOrigin = process.env.CORS_ORIGIN || 'http://localhost:4200';
 
-app.use(cors({ origin: 'http://localhost:4200' }));
+app.use(cors({ origin: corsOrigin }));
 app.use(express.json());
 
 const USERS = [
