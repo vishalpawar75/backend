@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: vakratund-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run migrate && npm run start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: https://YOUR_FRONTEND_URL
+      - key: ALLOW_DEMO_FALLBACK
+        value: false
+
+# If you want Render Postgres, create a database in the Render dashboard
+# and copy its DATABASE_URL into the service environment variables.
