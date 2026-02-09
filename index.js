@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
 const { testConnection } = require('./db/client');
 require('./ingest/scheduler');
 const { createInquiry, listInquiries, updateInquiryStatus } = require('./db/repository');
@@ -33,6 +35,32 @@ const USERS = [
 const sessions = new Map();
 const inquiries = [];
 let dbReady = false;
+
+const cropsPath = path.join(__dirname, 'data', 'crops.json');
+const cropsData = fs.existsSync(cropsPath) ? JSON.parse(fs.readFileSync(cropsPath, 'utf8')) : { categories: [] };
+
+function localizeCrop(crop, lang) {
+  const translation = crop.translations?.[lang] || {};
+  return {
+    ...crop,
+    name: translation.name || crop.name,
+    description: translation.description || crop.description,
+    season: translation.season || crop.season,
+    soil: translation.soil || crop.soil,
+    spacing: translation.spacing || crop.spacing,
+    seedRate: translation.seedRate || crop.seedRate,
+    irrigation: translation.irrigation || crop.irrigation,
+    fertilizer: translation.fertilizer || crop.fertilizer
+  };
+}
+
+function localizeCategory(category, lang) {
+  return {
+    ...category,
+    name: category.translations?.[lang] || category.name,
+    crops: category.crops.map((crop) => localizeCrop(crop, lang))
+  };
+}
 
 const companyProfile = {
   name: 'Vakratund Hybrid Seeds Private Limited',
@@ -138,6 +166,107 @@ app.get('/api/health', (req, res) => res.json({ ok: true }));
 
 app.get('/api/public/company', (req, res) => {
   res.json(companyProfile);
+});
+
+app.get('/api/public/crops', (req, res) => {
+  const lang = (req.query.lang || 'en').toString();
+  const query = (req.query.q || '').toString().toLowerCase();
+  const categories = cropsData.categories.map((category) => localizeCategory(category, lang));
+  if (!query) return res.json({ language: lang, categories });
+
+  const filtered = categories
+    .map((category) => ({
+      ...category,
+      crops: category.crops.filter((crop) => crop.name.toLowerCase().includes(query))
+    }))
+    .filter((category) => category.crops.length > 0);
+  return res.json({ language: lang, categories: filtered });
+});
+
+app.get('/api/public/crops/:id', (req, res) => {
+  const lang = (req.query.lang || 'en').toString();
+  const cropId = req.params.id;
+  for (const category of cropsData.categories) {
+    const crop = category.crops.find((item) => item.id === cropId);
+    if (crop) {
+      return res.json({ ...localizeCrop(crop, lang), category: category.id });
+    }
+  }
+  return res.status(404).json({ error: 'Crop not found' });
+});
+
+app.post('/api/public/diagnose', async (req, res) => {
+  const { imageData, language } = req.body || {};
+  if (!imageData || typeof imageData !== 'string') {
+    return res.status(400).json({ error: 'Missing image data' });
+  }
+
+  if (!process.env.GEMINI_API_KEY) {
+    return res.status(500).json({ error: 'Gemini API key not configured' });
+  }
+
+  const match = imageData.match(/^data:(image\/[a-zA-Z0-9.+-]+);base64,(.+)$/);
+  if (!match) {
+    return res.status(400).json({ error: 'Invalid image data' });
+  }
+  const mimeType = match[1];
+  const base64Data = match[2];
+
+  try {
+    const model = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+    const response = await require('axios').post(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`,
+      {
+        contents: [
+          {
+            role: 'user',
+            parts: [
+              {
+                text:
+                  'You are an agricultural assistant. Analyze the plant/leaf image and suggest likely issues. ' +
+                  'Do NOT recommend or prescribe pesticides/chemicals. Provide safe, non-chemical first actions ' +
+                  'and advise consulting local agronomists for chemical guidance. ' +
+                  `Please respond in ${language || 'English'}. ` +
+                  'Return JSON ONLY with fields: issue, confidence (low/medium/high), category, ' +
+                  'symptoms (array of strings), safe_actions (array of strings), escalation_note (string). ' +
+                  'Do not include any extra text or markdown.'
+              },
+              {
+                inline_data: {
+                  mime_type: mimeType,
+                  data: base64Data
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+    );
+
+    const text = response.data?.candidates?.[0]?.content?.parts?.map((p) => p.text).join(' ') || '';
+    const jsonBlob = text.match(/\{[\s\S]*\}/)?.[0] || '';
+    let parsed;
+    try {
+      parsed = JSON.parse(jsonBlob || text);
+    } catch {
+      parsed = { issue: text, confidence: 'low', category: 'unknown', symptoms: [], safe_actions: [], escalation_note: '' };
+    }
+
+    if (typeof parsed.confidence === 'number') {
+      if (parsed.confidence >= 4) parsed.confidence = 'high';
+      else if (parsed.confidence >= 2) parsed.confidence = 'medium';
+      else parsed.confidence = 'low';
+    }
+    return res.json(parsed);
+  } catch (err) {
+    const message = err?.response?.data?.error?.message || err.message || 'Diagnosis failed';
+    return res.status(500).json({ error: message });
+  }
 });
 
 app.post('/api/public/inquiry', (req, res) => {

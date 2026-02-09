@@ -1,0 +1,2200 @@
+{
+  "categories": [
+    {
+      "id": "vegetables",
+      "name": "Vegetables",
+      "translations": {
+        "hi": "सब्जियां",
+        "mr": "भाज्या",
+        "gu": "શાકભાજી",
+        "te": "కూరగాయలు",
+        "ta": "காய்கறிகள்",
+        "kn": "ತರಕಾರಿಗಳು"
+      },
+      "crops": [
+        {
+          "id": "tomato",
+          "name": "Tomato",
+          "description": "High-value vegetable crop grown for fresh market and processing.",
+          "season": "Kharif, Rabi, and Summer (region-specific)",
+          "soil": "Sandy loam to loam with pH 6.0–7.0",
+          "spacing": "60 x 45 cm (varies with variety)",
+          "seedRate": "150–200 g/ha (nursery)",
+          "irrigation": "Light but frequent irrigation; avoid waterlogging",
+          "fertilizer": "NPK 100:50:50 kg/ha + FYM 20–25 t/ha",
+          "varieties": [
+            {
+              "name": "Disease-tolerant hybrid",
+              "maturityDays": "120–130 days",
+              "yield": "70–80 t/ha",
+              "traits": [
+                "Firm fruits",
+                "Transport friendly",
+                "High market demand"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "टमाटर",
+              "description": "ताजा और प्रोसेसिंग के लिए उच्च मूल्य वाली सब्जी फसल।",
+              "season": "खरीफ, रबी और गर्मी (क्षेत्र अनुसार)",
+              "soil": "बलुई दोमट से दोमट, pH 6.0–7.0",
+              "spacing": "60 x 45 सेमी (किस्म अनुसार)",
+              "seedRate": "150–200 ग्राम/हे (नर्सरी)",
+              "irrigation": "हल्की लेकिन नियमित सिंचाई; जलभराव से बचें",
+              "fertilizer": "NPK 100:50:50 किग्रा/हे + FYM 20–25 टन/हे"
+            },
+            "mr": {
+              "name": "टोमॅटो",
+              "description": "ताजी विक्री व प्रक्रिया यासाठी महत्त्वाची भाजीपाला फसल.",
+              "season": "खरीप, रबी आणि उन्हाळा (प्रदेशानुसार)",
+              "soil": "वालुकामय दोमट ते दोमट, pH 6.0–7.0",
+              "spacing": "60 x 45 सेमी (किस्मीनुसार)",
+              "seedRate": "150–200 ग्रॅम/हे (नर्सरी)",
+              "irrigation": "हलके पण नियमित सिंचन; जलसाठा टाळा",
+              "fertilizer": "NPK 100:50:50 किग्रा/हे + FYM 20–25 टन/हे"
+            },
+            "gu": {
+              "name": "ટમેટાં",
+              "description": "તાજા વેચાણ અને પ્રોસેસિંગ માટે ઊંચી કિંમતની શાકભાજી ફસલ.",
+              "season": "ખરીફ, રબી અને ઉનાળો (વિસ્તાર અનુસાર)",
+              "soil": "વાલુકામય બેરીથી બેરી માટી, pH 6.0–7.0",
+              "spacing": "60 x 45 સે.મી. (જાત મુજબ)",
+              "seedRate": "150–200 ગ્રામ/હે (નર્સરી)",
+              "irrigation": "હળવું પરંતુ નિયમિત સિંચાઈ; પાણી ભરાવ ટાળો",
+              "fertilizer": "NPK 100:50:50 કિગ્રા/હે + FYM 20–25 ટન/હે"
+            },
+            "te": {
+              "name": "టమోటా",
+              "description": "తాజా మార్కెట్ మరియు ప్రాసెసింగ్ కోసం విలువైన కూరగాయ పంట.",
+              "season": "ఖరీఫ్, రబీ, వేసవి (ప్రాంతాన్ని బట్టి)",
+              "soil": "సాండీ లోమ్ నుంచి లోమ్, pH 6.0–7.0",
+              "spacing": "60 x 45 సెం.మీ (వేరైటీ ప్రకారం)",
+              "seedRate": "150–200 గ్రా/హె (నర్సరీ)",
+              "irrigation": "తక్కువ కానీ తరచుగా నీరు; నీరు నిల్వ కాకుండా",
+              "fertilizer": "NPK 100:50:50 కేజి/హె + FYM 20–25 టన్ను/హె"
+            },
+            "ta": {
+              "name": "தக்காளி",
+              "description": "புதிய சந்தை மற்றும் செயலாக்கத்திற்கு பயன்படும் உயர்மதிப்பு காய்கறி.",
+              "season": "கரீப், ரபி, கோடை (பிரதேசத்தைப் பொறுத்து)",
+              "soil": "மணல் கலந்த இரும்பு மண், pH 6.0–7.0",
+              "spacing": "60 x 45 செ.மீ (வகைபடுத்தல்)",
+              "seedRate": "150–200 கிராம்/ஹெ (நாற்று)",
+              "irrigation": "சிறிதளவு ஆனால் அடிக்கடி நீர்ப்பாசனம்; நீர் தேக்கம் தவிர்க்கவும்",
+              "fertilizer": "NPK 100:50:50 கிலோ/ஹெ + FYM 20–25 டன்/ஹெ"
+            },
+            "kn": {
+              "name": "ಟೊಮ್ಯಾಟೊ",
+              "description": "ತಾಜಾ ಮಾರುಕಟ್ಟೆ ಮತ್ತು ಪ್ರೊಸೆಸಿಂಗ್‌ಗಾಗಿ ಮಹತ್ವದ ತರಕಾರಿ ಬೆಳೆ.",
+              "season": "ಖರೀಫ್, ರಬಿ, ಬೇಸಿಗೆ (ಪ್ರದೇಶಾನುಸಾರ)",
+              "soil": "ಮಣ್ಣುಮಿಶ್ರಿತ ಲೋಮ್, pH 6.0–7.0",
+              "spacing": "60 x 45 ಸೆ.ಮೀ (ವೈವಿಧ್ಯಕ್ಕೆ ಅನುಗುಣವಾಗಿ)",
+              "seedRate": "150–200 ಗ್ರಾಂ/ಹೆ (ನರ್ಸರಿ)",
+              "irrigation": "ಲಘುವಾಗಿ ಆದರೆ ನಿಯಮಿತ ನೀರಾವರಿ; ನೀರು ನಿಲ್ಲದಂತೆ",
+              "fertilizer": "NPK 100:50:50 ಕಿಗ್ರಾ/ಹೆ + FYM 20–25 ಟನ್/ಹೆ"
+            }
+          },
+          "durationDays": "110–130 days",
+          "recommendedStates": [
+            "Maharashtra",
+            "Karnataka",
+            "Andhra Pradesh",
+            "Gujarat"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato_seedlings.jpg",
+              "tips": [
+                "Transplant about 25-day-old seedlings for uniform establishment.",
+                "Use raised nursery/protrays and maintain moisture without waterlogging.",
+                "Treat seed with recommended biocontrols before sowing."
+              ],
+              "credit": {
+                "title": "Tomato seedlings.jpg",
+                "author": "Mothusi Sekhomba",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_seedlings.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato_Summer2008.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Tomato Summer2008",
+                "author": "Garitzko",
+                "license": "Public Domain",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_Summer2008.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato_Flower.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Tomato Flower.jpg",
+                "author": "TigerisLagoona",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_Flower.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harvested_Tomatoes.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Harvested Tomatoes.jpg",
+                "author": "Samuel Kiongo",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harvested_Tomatoes.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato_plant_picture.jpg",
+          "imageCredit": {
+            "title": "Tomato plant picture",
+            "author": "Divya Chinnasamy",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomato_plant_picture.jpg"
+          }
+        },
+        {
+          "id": "okra",
+          "name": "Okra (Bhindi)",
+          "description": "Warm-season vegetable with steady demand.",
+          "season": "Summer and Kharif",
+          "soil": "Well-drained loamy soil, pH 6.0–6.8",
+          "spacing": "45 x 30 cm",
+          "seedRate": "8–10 kg/ha",
+          "irrigation": "Every 7–10 days; avoid moisture stress",
+          "fertilizer": "NPK 100:60:60 kg/ha + FYM 15–20 t/ha",
+          "varieties": [
+            {
+              "name": "Virus-tolerant type",
+              "maturityDays": "50–60 days",
+              "yield": "80–100 q/ha",
+              "traits": [
+                "Tender pods",
+                "Market preferred",
+                "Resistant to mosaic"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "भिंडी"
+            },
+            "mr": {
+              "name": "भेंडी"
+            },
+            "gu": {
+              "name": "ભીંડા"
+            },
+            "te": {
+              "name": "బెండకాయ"
+            },
+            "ta": {
+              "name": "வெண்டைக்காய்"
+            },
+            "kn": {
+              "name": "ಬೆಂಡೆಕಾಯಿ"
+            }
+          },
+          "durationDays": "50–60 days",
+          "recommendedStates": [
+            "Maharashtra",
+            "Uttar Pradesh",
+            "Gujarat",
+            "Karnataka"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Okra_plant_and_fruits.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Okra plant and fruits.jpg",
+                "author": "Kekiwiyi",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okra_plant_and_fruits.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Okra_plant_and_fruits.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Okra plant and fruits.jpg",
+                "author": "Kekiwiyi",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okra_plant_and_fruits.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_okra_flower.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Yellow okra flower.jpg",
+                "author": "Orangemosambi",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_okra_flower.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Okra_plant_and_fruits.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Okra plant and fruits.jpg",
+                "author": "Kekiwiyi",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okra_plant_and_fruits.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/An_okra-plant.jpg",
+          "imageCredit": {
+            "title": "An okra-plant",
+            "author": "Salma kyari",
+            "license": "CC0 1.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:An_okra-plant.jpg"
+          }
+        },
+        {
+          "id": "onion",
+          "name": "Onion",
+          "description": "Bulb crop used across fresh, storage, and processing markets.",
+          "season": "Kharif, Late Kharif, Rabi",
+          "soil": "Loamy soil with pH 6.0–7.5",
+          "spacing": "15 x 10 cm (transplanted)",
+          "seedRate": "8–10 kg/ha (nursery)",
+          "irrigation": "Frequent light irrigation; avoid water stress",
+          "fertilizer": "NPK 100:50:50 kg/ha + FYM 20 t/ha",
+          "varieties": [
+            {
+              "name": "Storage type",
+              "maturityDays": "120–130 days",
+              "yield": "250–300 q/ha",
+              "traits": [
+                "Good keeping quality",
+                "Uniform bulbs"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "प्याज"
+            },
+            "mr": {
+              "name": "कांदा"
+            },
+            "gu": {
+              "name": "ડુંગળી"
+            },
+            "te": {
+              "name": "ఉల్లిపాయ"
+            },
+            "ta": {
+              "name": "வெங்காயம்"
+            },
+            "kn": {
+              "name": "ಈರುಳ್ಳಿ"
+            }
+          },
+          "durationDays": "120–150 days",
+          "recommendedStates": [
+            "Maharashtra",
+            "Madhya Pradesh",
+            "Karnataka",
+            "Gujarat"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Onion_plant.JPG",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Onion plant",
+                "author": "Pabos95",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onion_plant.JPG"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Onion_plant.JPG",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Onion plant",
+                "author": "Pabos95",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onion_plant.JPG"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Onion_flower.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Onion flower.jpg",
+                "author": "Marcin Białek (Sfu)",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onion_flower.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Onion_plant.JPG",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Onion plant",
+                "author": "Pabos95",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onion_plant.JPG"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Onion_plant.JPG",
+          "imageCredit": {
+            "title": "Onion plant",
+            "author": "Pabos95",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onion_plant.JPG"
+          }
+        },
+        {
+          "id": "potato",
+          "name": "Potato",
+          "description": "Cool-season tuber crop with high food and processing demand.",
+          "season": "Rabi",
+          "soil": "Sandy loam, pH 5.2–6.4",
+          "spacing": "60 x 20 cm",
+          "seedRate": "2.0–2.5 t/ha seed tubers",
+          "irrigation": "7–10 irrigations; avoid waterlogging",
+          "fertilizer": "NPK 150:80:100 kg/ha + FYM 20–25 t/ha",
+          "varieties": [
+            {
+              "name": "Processing type",
+              "maturityDays": "100–120 days",
+              "yield": "300–400 q/ha",
+              "traits": [
+                "High dry matter",
+                "Good for chips"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "आलू"
+            },
+            "mr": {
+              "name": "बटाटा"
+            },
+            "gu": {
+              "name": "બટાકા"
+            },
+            "te": {
+              "name": "బంగాళాదుంప"
+            },
+            "ta": {
+              "name": "உருளைக்கிழங்கு"
+            },
+            "kn": {
+              "name": "ಆಲೂಗಡ್ಡೆ"
+            }
+          },
+          "durationDays": "100–120 days",
+          "recommendedStates": [
+            "Uttar Pradesh",
+            "West Bengal",
+            "Bihar",
+            "Punjab"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Potato_plant.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Potato plant",
+                "author": "USDA ARS (public domain)",
+                "license": "Public Domain",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_plant.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Potato_plant.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Potato plant",
+                "author": "USDA ARS (public domain)",
+                "license": "Public Domain",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_plant.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Potato_plant.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Potato plant",
+                "author": "USDA ARS (public domain)",
+                "license": "Public Domain",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_plant.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Potato_plant.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Potato plant",
+                "author": "USDA ARS (public domain)",
+                "license": "Public Domain",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_plant.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Potato_plant.jpg",
+          "imageCredit": {
+            "title": "Potato plant",
+            "author": "USDA ARS (public domain)",
+            "license": "Public Domain",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Potato_plant.jpg"
+          }
+        },
+        {
+          "id": "brinjal",
+          "name": "Brinjal (Eggplant)",
+          "description": "Widely grown vegetable with strong regional market demand.",
+          "season": "Kharif and Rabi",
+          "soil": "Loam with pH 5.5–6.6",
+          "spacing": "60 x 45 cm",
+          "seedRate": "300–400 g/ha (nursery)",
+          "irrigation": "Regular irrigation; avoid drought stress",
+          "fertilizer": "NPK 100:50:50 kg/ha + FYM 20 t/ha",
+          "varieties": [
+            {
+              "name": "Long-fruit type",
+              "maturityDays": "120–140 days",
+              "yield": "300–350 q/ha",
+              "traits": [
+                "Glossy fruits",
+                "Market preferred"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "बैंगन"
+            },
+            "mr": {
+              "name": "वांगी"
+            },
+            "gu": {
+              "name": "રિંગણા"
+            },
+            "te": {
+              "name": "వంకాయ"
+            },
+            "ta": {
+              "name": "கத்தரிக்காய்"
+            },
+            "kn": {
+              "name": "ಬದನೆಕಾಯಿ"
+            }
+          },
+          "durationDays": "120–140 days",
+          "recommendedStates": [
+            "West Bengal",
+            "Odisha",
+            "Bihar",
+            "Karnataka"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brinjal_plant.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Brinjal plant.jpg",
+                "author": "Vijayanrajapuram",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brinjal_plant.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brinjal_plant.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Brinjal plant.jpg",
+                "author": "Vijayanrajapuram",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brinjal_plant.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eggplant_flower_brinjal.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Eggplant flower brinjal.jpg",
+                "author": "thiagarajan",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eggplant_flower_brinjal.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brinjal_plant.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Brinjal plant.jpg",
+                "author": "Vijayanrajapuram",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brinjal_plant.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Brinjal_plant_of_kitchen_garden.jpg",
+          "imageCredit": {
+            "title": "Brinjal plant of kitchen garden",
+            "author": "Keshav 712",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brinjal_plant_of_kitchen_garden.jpg"
+          }
+        },
+        {
+          "id": "chilli",
+          "name": "Chilli",
+          "description": "Spice crop used fresh and dried; valued for pungency and color.",
+          "season": "Kharif and Rabi",
+          "soil": "Well-drained loam, pH 6.0–7.0",
+          "spacing": "45 x 45 cm",
+          "seedRate": "1–1.5 kg/ha (nursery)",
+          "irrigation": "Irrigate every 8–10 days; avoid water stress",
+          "fertilizer": "NPK 120:60:60 kg/ha + FYM 20 t/ha",
+          "varieties": [
+            {
+              "name": "High color type",
+              "maturityDays": "150–180 days",
+              "yield": "20–25 q/ha (dry)",
+              "traits": [
+                "Bright red color",
+                "High pungency"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "मिर्च"
+            },
+            "mr": {
+              "name": "मिरची"
+            },
+            "gu": {
+              "name": "મરચાં"
+            },
+            "te": {
+              "name": "మిర్చి"
+            },
+            "ta": {
+              "name": "மிளகாய்"
+            },
+            "kn": {
+              "name": "ಮೆಣಸಿನಕಾಯಿ"
+            }
+          },
+          "durationDays": "150–180 days",
+          "recommendedStates": [
+            "Andhra Pradesh",
+            "Telangana",
+            "Karnataka",
+            "Maharashtra"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chilli_Plant.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Chilli Plant",
+                "author": "Mokkie",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chilli_Plant.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chilli_Plant.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Chilli Plant",
+                "author": "Mokkie",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chilli_Plant.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chilli_Plant.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Chilli Plant",
+                "author": "Mokkie",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chilli_Plant.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chilli_Plant.jpg",
+              "tips": [
+                "Harvesting can start around 75 days after transplanting.",
+                "Initial pickings are green chillies, later pickings are red ripe fruits.",
+                "Dry ripe fruits properly to retain color and quality."
+              ],
+              "credit": {
+                "title": "Chilli Plant",
+                "author": "Mokkie",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chilli_Plant.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chilli_Plant.jpg",
+          "imageCredit": {
+            "title": "Chilli Plant",
+            "author": "Mokkie",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chilli_Plant.jpg"
+          }
+        },
+        {
+          "id": "cabbage",
+          "name": "Cabbage",
+          "description": "Cool-season leafy vegetable with strong winter demand.",
+          "season": "Rabi",
+          "soil": "Loam with pH 6.0–6.8",
+          "spacing": "45 x 45 cm",
+          "seedRate": "350–500 g/ha (nursery)",
+          "irrigation": "Regular irrigation; avoid water stress",
+          "fertilizer": "NPK 150:80:80 kg/ha + FYM 25 t/ha",
+          "varieties": [
+            {
+              "name": "Round head type",
+              "maturityDays": "90–100 days",
+              "yield": "400–500 q/ha",
+              "traits": [
+                "Compact heads",
+                "Market preferred"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "पत्ता गोभी"
+            },
+            "mr": {
+              "name": "कोबी"
+            },
+            "gu": {
+              "name": "કોબી"
+            },
+            "te": {
+              "name": "కోస"
+            },
+            "ta": {
+              "name": "முட்டைக்கோஸ்"
+            },
+            "kn": {
+              "name": "ಎಲೆಕೋಸು"
+            }
+          },
+          "durationDays": "90–120 days",
+          "recommendedStates": [
+            "West Bengal",
+            "Odisha",
+            "Bihar",
+            "Himachal Pradesh"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabbage_plant_picture_and_images.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Cabbage plant picture and images",
+                "author": "Bharmitha Selvaraj",
+                "license": "CC0 1.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabbage_plant_picture_and_images.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabbage_plant_picture_and_images.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Cabbage plant picture and images",
+                "author": "Bharmitha Selvaraj",
+                "license": "CC0 1.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabbage_plant_picture_and_images.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabbage_plant_picture_and_images.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Cabbage plant picture and images",
+                "author": "Bharmitha Selvaraj",
+                "license": "CC0 1.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabbage_plant_picture_and_images.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabbage_plant_picture_and_images.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Cabbage plant picture and images",
+                "author": "Bharmitha Selvaraj",
+                "license": "CC0 1.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabbage_plant_picture_and_images.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabbage_plant_picture_and_images.jpg",
+          "imageCredit": {
+            "title": "Cabbage plant picture and images",
+            "author": "Bharmitha Selvaraj",
+            "license": "CC0 1.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabbage_plant_picture_and_images.jpg"
+          }
+        },
+        {
+          "id": "cauliflower",
+          "name": "Cauliflower",
+          "description": "Cool-season vegetable valued for curd quality.",
+          "season": "Rabi",
+          "soil": "Loam with pH 6.0–6.5",
+          "spacing": "45 x 45 cm",
+          "seedRate": "500–700 g/ha (nursery)",
+          "irrigation": "Frequent irrigation; avoid moisture stress",
+          "fertilizer": "NPK 150:80:60 kg/ha + FYM 20 t/ha",
+          "varieties": [
+            {
+              "name": "Mid-season type",
+              "maturityDays": "90–110 days",
+              "yield": "250–300 q/ha",
+              "traits": [
+                "White curds",
+                "Compact heads"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "फूल गोभी"
+            },
+            "mr": {
+              "name": "फुलकोबी"
+            },
+            "gu": {
+              "name": "ફૂલકોબી"
+            },
+            "te": {
+              "name": "కాలీఫ్లవర్"
+            },
+            "ta": {
+              "name": "பூக்கோஸ்"
+            },
+            "kn": {
+              "name": "ಹೂಕೋಸು"
+            }
+          },
+          "durationDays": "90–110 days",
+          "recommendedStates": [
+            "West Bengal",
+            "Uttar Pradesh",
+            "Bihar",
+            "Madhya Pradesh"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cauliflower_plants_growing.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Cauliflower plants growing",
+                "author": "Neeha5",
+                "license": "CC BY 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cauliflower_plants_growing.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cauliflower_plants_growing.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Cauliflower plants growing",
+                "author": "Neeha5",
+                "license": "CC BY 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cauliflower_plants_growing.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cauliflower_plants_growing.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Cauliflower plants growing",
+                "author": "Neeha5",
+                "license": "CC BY 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cauliflower_plants_growing.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cauliflower_plants_growing.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Cauliflower plants growing",
+                "author": "Neeha5",
+                "license": "CC BY 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cauliflower_plants_growing.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cauliflower_plants_growing.jpg",
+          "imageCredit": {
+            "title": "Cauliflower plants growing",
+            "author": "Neeha5",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cauliflower_plants_growing.jpg"
+          }
+        },
+        {
+          "id": "cucumber",
+          "name": "Cucumber",
+          "description": "Short-duration vegetable crop for fresh consumption.",
+          "season": "Summer and Kharif",
+          "soil": "Sandy loam with pH 6.0–7.0",
+          "spacing": "150 x 60 cm (trellis) or 120 x 60 cm",
+          "seedRate": "2–3 kg/ha",
+          "irrigation": "Frequent irrigation; avoid moisture stress",
+          "fertilizer": "NPK 80:60:60 kg/ha + FYM 20 t/ha",
+          "varieties": [
+            {
+              "name": "Slicing type",
+              "maturityDays": "45–55 days",
+              "yield": "120–150 q/ha",
+              "traits": [
+                "Uniform fruits",
+                "Market preferred"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "खीरा"
+            },
+            "mr": {
+              "name": "काकडी"
+            },
+            "gu": {
+              "name": "કાકડી"
+            },
+            "te": {
+              "name": "దోసకాయ"
+            },
+            "ta": {
+              "name": "வெள்ளரிக்காய்"
+            },
+            "kn": {
+              "name": "ಸೌತೆಕಾಯಿ"
+            }
+          },
+          "durationDays": "45–60 days",
+          "recommendedStates": [
+            "Uttar Pradesh",
+            "Bihar",
+            "Karnataka",
+            "Gujarat"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cucumber_plant.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Cucumber plant",
+                "author": "Sabamohammad",
+                "license": "CC BY 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cucumber_plant.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cucumber_plant.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Cucumber plant",
+                "author": "Sabamohammad",
+                "license": "CC BY 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cucumber_plant.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cucumber_plant.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Cucumber plant",
+                "author": "Sabamohammad",
+                "license": "CC BY 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cucumber_plant.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cucumber_plant.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Cucumber plant",
+                "author": "Sabamohammad",
+                "license": "CC BY 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cucumber_plant.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cucumber_plant.jpg",
+          "imageCredit": {
+            "title": "Cucumber plant",
+            "author": "Sabamohammad",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cucumber_plant.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "field",
+      "name": "Field Crops",
+      "translations": {
+        "hi": "खेत फसलें",
+        "mr": "क्षेत्रीय पिके",
+        "gu": "ક્ષેત્ર પાકો",
+        "te": "పొలపు పంటలు",
+        "ta": "வயல் பயிர்கள்",
+        "kn": "ಕ್ಷೇತ್ರ ಬೆಳೆಗಳು"
+      },
+      "crops": [
+        {
+          "id": "wheat",
+          "name": "Wheat",
+          "description": "Major rabi cereal grown for grain and flour.",
+          "season": "Rabi (Nov–Mar)",
+          "soil": "Well-drained loam, pH 6.0–7.5",
+          "spacing": "22–25 cm row spacing",
+          "seedRate": "100–125 kg/ha",
+          "irrigation": "5–6 irrigations across crown root to flowering",
+          "fertilizer": "NPK 120:60:40 kg/ha",
+          "varieties": [
+            {
+              "name": "High-yield type",
+              "maturityDays": "140–150 days",
+              "yield": "45–50 q/ha",
+              "traits": [
+                "Lodging tolerant",
+                "Wide adaptability"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "गेहूं"
+            },
+            "mr": {
+              "name": "गहू"
+            },
+            "gu": {
+              "name": "ઘઉં"
+            },
+            "te": {
+              "name": "గోధుమ"
+            },
+            "ta": {
+              "name": "கோதுமை"
+            },
+            "kn": {
+              "name": "ಗೋಧಿ"
+            }
+          },
+          "durationDays": "140–150 days",
+          "recommendedStates": [
+            "Uttar Pradesh",
+            "Punjab",
+            "Haryana",
+            "Madhya Pradesh"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat_plant.jpg",
+              "tips": [
+                "Seed rate around 100 kg/ha is recommended for wheat.",
+                "Sow in lines about 20 cm apart and avoid deep sowing.",
+                "Ensure fine tilth and proper seedbed moisture."
+              ],
+              "credit": {
+                "title": "Wheat plant",
+                "author": "IsarojSachin",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheat_plant.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat_plant.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Wheat plant",
+                "author": "IsarojSachin",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheat_plant.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat_plant.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Wheat plant",
+                "author": "IsarojSachin",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheat_plant.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat_plant.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Wheat plant",
+                "author": "IsarojSachin",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheat_plant.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat_plant.jpg",
+          "imageCredit": {
+            "title": "Wheat plant",
+            "author": "IsarojSachin",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wheat_plant.jpg"
+          }
+        },
+        {
+          "id": "rice",
+          "name": "Rice (Paddy)",
+          "description": "Staple cereal crop grown in irrigated and rainfed systems.",
+          "season": "Kharif (Jun–Nov) and Rabi in irrigated areas",
+          "soil": "Clayey loam with good water retention",
+          "spacing": "20 x 15 cm (transplanted)",
+          "seedRate": "25–30 kg/ha (nursery)",
+          "irrigation": "Maintain shallow water; drainage near maturity",
+          "fertilizer": "NPK 120:60:40 kg/ha",
+          "varieties": [
+            {
+              "name": "High milling type",
+              "maturityDays": "130–150 days",
+              "yield": "50–60 q/ha",
+              "traits": [
+                "Good grain quality",
+                "High market demand"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "धान"
+            },
+            "mr": {
+              "name": "भात"
+            },
+            "gu": {
+              "name": "ચોખા"
+            },
+            "te": {
+              "name": "వరి"
+            },
+            "ta": {
+              "name": "நெல்"
+            },
+            "kn": {
+              "name": "ಅಕ್ಕಿ"
+            }
+          },
+          "durationDays": "130–150 days",
+          "recommendedStates": [
+            "West Bengal",
+            "Uttar Pradesh",
+            "Punjab",
+            "Odisha"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rice_Field*.jpg",
+              "tips": [
+                "Use younger seedlings (about 15 days) for SRI transplanting.",
+                "Maintain soil just moist during the first 10 days after transplanting.",
+                "Square planting helps weeding and aeration."
+              ],
+              "credit": {
+                "title": "Rice Field*",
+                "author": "Luwenn",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_Field*.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rice_Field*.jpg",
+              "tips": [
+                "Follow alternate wetting and drying as recommended in SRI.",
+                "Restore irrigation after hairline cracks until panicle initiation.",
+                "Use cono/rotary weeder at 7–10 day intervals to manage weeds."
+              ],
+              "credit": {
+                "title": "Rice Field*",
+                "author": "Luwenn",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_Field*.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rice_Field*.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Rice Field*",
+                "author": "Luwenn",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_Field*.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rice_Field*.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Rice Field*",
+                "author": "Luwenn",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_Field*.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Rice_Field*.jpg",
+          "imageCredit": {
+            "title": "Rice Field*",
+            "author": "Luwenn",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_Field*.jpg"
+          }
+        },
+        {
+          "id": "maize",
+          "name": "Maize",
+          "description": "Versatile cereal used for food, feed, and industry.",
+          "season": "Kharif and Rabi",
+          "soil": "Well-drained loam, pH 5.5–7.5",
+          "spacing": "60 x 20 cm",
+          "seedRate": "18–20 kg/ha",
+          "irrigation": "Critical at knee-high and tasseling",
+          "fertilizer": "NPK 150:60:40 kg/ha",
+          "varieties": [
+            {
+              "name": "Single-cross hybrid",
+              "maturityDays": "95–110 days",
+              "yield": "60–80 q/ha",
+              "traits": [
+                "High yield",
+                "Uniform cobs"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "मक्का"
+            },
+            "mr": {
+              "name": "मका"
+            },
+            "gu": {
+              "name": "મકાઈ"
+            },
+            "te": {
+              "name": "మొక్కజొన్న"
+            },
+            "ta": {
+              "name": "சோளம்"
+            },
+            "kn": {
+              "name": "ಮೆಕ್ಕೆಜೋಳ"
+            }
+          },
+          "durationDays": "90–110 days",
+          "recommendedStates": [
+            "Karnataka",
+            "Madhya Pradesh",
+            "Bihar",
+            "Telangana"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maize_Plant_(2).JPG",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Maize Plant (2).JPG",
+                "author": "Bijay chaurasia",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maize_Plant_(2).JPG"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maize_Plant_(2).JPG",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Maize Plant (2).JPG",
+                "author": "Bijay chaurasia",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maize_Plant_(2).JPG"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maize_Plant_(2).JPG",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Maize Plant (2).JPG",
+                "author": "Bijay chaurasia",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maize_Plant_(2).JPG"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maize_Plant_(2).JPG",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Maize Plant (2).JPG",
+                "author": "Bijay chaurasia",
+                "license": "CC BY-SA 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maize_Plant_(2).JPG"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Maize_Plant_(2).JPG",
+          "imageCredit": {
+            "title": "Maize Plant (2).JPG",
+            "author": "Bijay chaurasia",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maize_Plant_(2).JPG"
+          }
+        },
+        {
+          "id": "cotton",
+          "name": "Cotton",
+          "description": "Fiber crop grown for lint and seed oil.",
+          "season": "Kharif",
+          "soil": "Black cotton soil, pH 6.0–8.0",
+          "spacing": "90 x 60 cm",
+          "seedRate": "2–3 kg/ha",
+          "irrigation": "Irrigate at critical flowering and boll development",
+          "fertilizer": "NPK 120:60:60 kg/ha",
+          "varieties": [
+            {
+              "name": "Bt hybrid type",
+              "maturityDays": "160–180 days",
+              "yield": "20–25 q/ha lint",
+              "traits": [
+                "Bollworm tolerance",
+                "High lint yield"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "कपास"
+            },
+            "mr": {
+              "name": "कापूस"
+            },
+            "gu": {
+              "name": "કપાસ"
+            },
+            "te": {
+              "name": "పత్తి"
+            },
+            "ta": {
+              "name": "பருத்தி"
+            },
+            "kn": {
+              "name": "ಹತ್ತಿ"
+            }
+          },
+          "durationDays": "160–180 days",
+          "recommendedStates": [
+            "Gujarat",
+            "Maharashtra",
+            "Telangana",
+            "Punjab"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/COTTON_PLANT.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "COTTON PLANT.jpg",
+                "author": "Nadinviki",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:COTTON_PLANT.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/COTTON_PLANT.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "COTTON PLANT.jpg",
+                "author": "Nadinviki",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:COTTON_PLANT.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/COTTON_PLANT.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "COTTON PLANT.jpg",
+                "author": "Nadinviki",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:COTTON_PLANT.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/COTTON_PLANT.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "COTTON PLANT.jpg",
+                "author": "Nadinviki",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:COTTON_PLANT.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/COTTON_PLANT.jpg",
+          "imageCredit": {
+            "title": "COTTON PLANT.jpg",
+            "author": "Nadinviki",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:COTTON_PLANT.jpg"
+          }
+        },
+        {
+          "id": "sugarcane",
+          "name": "Sugarcane",
+          "description": "Long-duration cash crop for sugar and ethanol.",
+          "season": "Annual",
+          "soil": "Deep loam to clay loam, pH 6.5–7.5",
+          "spacing": "90–120 cm row spacing",
+          "seedRate": "6–8 t/ha (setts)",
+          "irrigation": "Regular irrigation; avoid water stress",
+          "fertilizer": "NPK 250:115:115 kg/ha",
+          "varieties": [
+            {
+              "name": "High sugar type",
+              "maturityDays": "300–360 days",
+              "yield": "80–100 t/ha",
+              "traits": [
+                "High sucrose",
+                "Good ratoonability"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "गन्ना"
+            },
+            "mr": {
+              "name": "ऊस"
+            },
+            "gu": {
+              "name": "ઉખડ"
+            },
+            "te": {
+              "name": "చెరకు"
+            },
+            "ta": {
+              "name": "கரும்பு"
+            },
+            "kn": {
+              "name": "ಕಬ್ಬು"
+            }
+          },
+          "durationDays": "300–360 days",
+          "recommendedStates": [
+            "Uttar Pradesh",
+            "Maharashtra",
+            "Karnataka",
+            "Tamil Nadu"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sugarcane_Field.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Sugarcane Field.jpg",
+                "author": "Gaurav Dhwaj Khadka",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugarcane_Field.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sugarcane_Field.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Sugarcane Field.jpg",
+                "author": "Gaurav Dhwaj Khadka",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugarcane_Field.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sugarcane_Field.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Sugarcane Field.jpg",
+                "author": "Gaurav Dhwaj Khadka",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugarcane_Field.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sugarcane_Field.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Sugarcane Field.jpg",
+                "author": "Gaurav Dhwaj Khadka",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugarcane_Field.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Sugarcane_Field.jpg",
+          "imageCredit": {
+            "title": "Sugarcane Field.jpg",
+            "author": "Gaurav Dhwaj Khadka",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sugarcane_Field.jpg"
+          }
+        },
+        {
+          "id": "soybean",
+          "name": "Soybean",
+          "description": "Oilseed and protein crop used for food and feed.",
+          "season": "Kharif",
+          "soil": "Well-drained loam, pH 6.0–7.5",
+          "spacing": "45 x 5 cm",
+          "seedRate": "70–80 kg/ha",
+          "irrigation": "Usually rainfed; irrigate during flowering if dry",
+          "fertilizer": "NPK 20:60:40 kg/ha + inoculation",
+          "varieties": [
+            {
+              "name": "Early maturing type",
+              "maturityDays": "90–100 days",
+              "yield": "20–25 q/ha",
+              "traits": [
+                "Lodging tolerant",
+                "Uniform pods"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "सोयाबीन"
+            },
+            "mr": {
+              "name": "सोयाबीन"
+            },
+            "gu": {
+              "name": "સોયાબીન"
+            },
+            "te": {
+              "name": "సోయాబీన్"
+            },
+            "ta": {
+              "name": "சோயாபீன்"
+            },
+            "kn": {
+              "name": "ಸೊಯಾಬೀನ್"
+            }
+          },
+          "durationDays": "90–100 days",
+          "recommendedStates": [
+            "Madhya Pradesh",
+            "Maharashtra",
+            "Rajasthan",
+            "Telangana"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Soybean_Field_(9624054886).jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Soybean Field (9624054886).jpg",
+                "author": "United Soybean Board",
+                "license": "CC BY 2.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soybean_Field_(9624054886).jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Soybean_Field_(9624054886).jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Soybean Field (9624054886).jpg",
+                "author": "United Soybean Board",
+                "license": "CC BY 2.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soybean_Field_(9624054886).jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Soybean_Field_(9624054886).jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Soybean Field (9624054886).jpg",
+                "author": "United Soybean Board",
+                "license": "CC BY 2.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soybean_Field_(9624054886).jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Soybean_Field_(9624054886).jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Soybean Field (9624054886).jpg",
+                "author": "United Soybean Board",
+                "license": "CC BY 2.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soybean_Field_(9624054886).jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Soybean_Field_(9624054886).jpg",
+          "imageCredit": {
+            "title": "Soybean Field (9624054886).jpg",
+            "author": "United Soybean Board",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Soybean_Field_(9624054886).jpg"
+          }
+        },
+        {
+          "id": "groundnut",
+          "name": "Groundnut",
+          "description": "Oilseed crop grown in kharif and rabi seasons.",
+          "season": "Kharif and Rabi",
+          "soil": "Sandy loam, pH 6.0–7.0",
+          "spacing": "30 x 10 cm",
+          "seedRate": "100–125 kg/ha",
+          "irrigation": "Critical at flowering and pod development",
+          "fertilizer": "NPK 20:40:40 kg/ha + gypsum",
+          "varieties": [
+            {
+              "name": "Bold kernel type",
+              "maturityDays": "110–120 days",
+              "yield": "20–25 q/ha",
+              "traits": [
+                "High oil",
+                "Market preferred"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "मूंगफली"
+            },
+            "mr": {
+              "name": "भुईमुग"
+            },
+            "gu": {
+              "name": "મગફળી"
+            },
+            "te": {
+              "name": "వేరుసెనగ"
+            },
+            "ta": {
+              "name": "வேர்க்கடலை"
+            },
+            "kn": {
+              "name": "ಕಡಲೆಕಾಯಿ"
+            }
+          },
+          "durationDays": "110–120 days",
+          "recommendedStates": [
+            "Gujarat",
+            "Andhra Pradesh",
+            "Tamil Nadu",
+            "Karnataka"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Groundnut_plant.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Groundnut plant.jpg",
+                "author": "Uday patel zz",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groundnut_plant.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Groundnut_plant.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Groundnut plant.jpg",
+                "author": "Uday patel zz",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groundnut_plant.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Groundnut_plant.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Groundnut plant.jpg",
+                "author": "Uday patel zz",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groundnut_plant.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Groundnut_plant.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Groundnut plant.jpg",
+                "author": "Uday patel zz",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groundnut_plant.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Groundnut_plant.jpg",
+          "imageCredit": {
+            "title": "Groundnut plant.jpg",
+            "author": "Uday patel zz",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Groundnut_plant.jpg"
+          }
+        },
+        {
+          "id": "mustard",
+          "name": "Mustard",
+          "description": "Major rabi oilseed crop.",
+          "season": "Rabi",
+          "soil": "Loam, pH 6.0–7.5",
+          "spacing": "45 x 15 cm",
+          "seedRate": "4–6 kg/ha",
+          "irrigation": "Two irrigations at flowering and pod filling",
+          "fertilizer": "NPK 80:40:40 kg/ha + sulfur",
+          "varieties": [
+            {
+              "name": "High oil type",
+              "maturityDays": "120–140 days",
+              "yield": "15–20 q/ha",
+              "traits": [
+                "High oil content",
+                "Early maturity"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "सरसों"
+            },
+            "mr": {
+              "name": "मोहरी"
+            },
+            "gu": {
+              "name": "રાઈ"
+            },
+            "te": {
+              "name": "సెనగలు"
+            },
+            "ta": {
+              "name": "கடுகு"
+            },
+            "kn": {
+              "name": "ಸಾಸಿವೆ"
+            }
+          },
+          "durationDays": "120–140 days",
+          "recommendedStates": [
+            "Rajasthan",
+            "Uttar Pradesh",
+            "Madhya Pradesh",
+            "Haryana"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_mustard_flower.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Yellow mustard flower.jpg",
+                "author": "Indiaphotoblog",
+                "license": "CC BY 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_mustard_flower.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_mustard_flower.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Yellow mustard flower.jpg",
+                "author": "Indiaphotoblog",
+                "license": "CC BY 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_mustard_flower.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_mustard_flower.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Yellow mustard flower.jpg",
+                "author": "Indiaphotoblog",
+                "license": "CC BY 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_mustard_flower.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_mustard_flower.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Yellow mustard flower.jpg",
+                "author": "Indiaphotoblog",
+                "license": "CC BY 3.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_mustard_flower.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_mustard_flower.jpg",
+          "imageCredit": {
+            "title": "Yellow mustard flower.jpg",
+            "author": "Indiaphotoblog",
+            "license": "CC BY 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellow_mustard_flower.jpg"
+          }
+        },
+        {
+          "id": "chickpea",
+          "name": "Chickpea (Gram)",
+          "description": "Important rabi pulse crop.",
+          "season": "Rabi",
+          "soil": "Loam, pH 6.0–8.0",
+          "spacing": "30 x 10 cm",
+          "seedRate": "80–100 kg/ha",
+          "irrigation": "Mostly rainfed; one irrigation at flowering",
+          "fertilizer": "NPK 20:40:0 kg/ha + inoculation",
+          "varieties": [
+            {
+              "name": "Bold seed type",
+              "maturityDays": "110–120 days",
+              "yield": "15–20 q/ha",
+              "traits": [
+                "Large grains",
+                "Market preferred"
+              ]
+            }
+          ],
+          "translations": {
+            "hi": {
+              "name": "चना"
+            },
+            "mr": {
+              "name": "हरभरा"
+            },
+            "gu": {
+              "name": "ચણા"
+            },
+            "te": {
+              "name": "సెనగ"
+            },
+            "ta": {
+              "name": "கடலை"
+            },
+            "kn": {
+              "name": "ಕಡಲೆ"
+            }
+          },
+          "durationDays": "110–120 days",
+          "recommendedStates": [
+            "Madhya Pradesh",
+            "Rajasthan",
+            "Maharashtra",
+            "Uttar Pradesh"
+          ],
+          "stages": [
+            {
+              "label": "Seedling",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chickpeas_Plant.jpg",
+              "tips": [
+                "Use healthy seed or seedlings and maintain moisture.",
+                "Protect nursery from damping-off and pests.",
+                "Transplant at recommended age for better establishment."
+              ],
+              "credit": {
+                "title": "Chickpeas Plant.jpg",
+                "author": "Nundhaa",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chickpeas_Plant.jpg"
+              }
+            },
+            {
+              "label": "Vegetative",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chickpeas_Plant.jpg",
+              "tips": [
+                "Keep fields weed-free and maintain balanced nutrition.",
+                "Irrigate regularly to avoid moisture stress.",
+                "Monitor early pest/disease symptoms and act early."
+              ],
+              "credit": {
+                "title": "Chickpeas Plant.jpg",
+                "author": "Nundhaa",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chickpeas_Plant.jpg"
+              }
+            },
+            {
+              "label": "Flowering/Fruiting",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chickpeas_Plant.jpg",
+              "tips": [
+                "Avoid moisture stress during flowering/fruiting.",
+                "Support pollination and watch for pests.",
+                "Apply recommended top dressing if needed."
+              ],
+              "credit": {
+                "title": "Chickpeas Plant.jpg",
+                "author": "Nundhaa",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chickpeas_Plant.jpg"
+              }
+            },
+            {
+              "label": "Harvest",
+              "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chickpeas_Plant.jpg",
+              "tips": [
+                "Harvest at proper maturity for quality produce.",
+                "Handle carefully to reduce damage.",
+                "Sort and store properly after harvest."
+              ],
+              "credit": {
+                "title": "Chickpeas Plant.jpg",
+                "author": "Nundhaa",
+                "license": "CC BY-SA 4.0",
+                "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chickpeas_Plant.jpg"
+              }
+            }
+          ],
+          "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chickpeas_Plant.jpg",
+          "imageCredit": {
+            "title": "Chickpeas Plant.jpg",
+            "author": "Nundhaa",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chickpeas_Plant.jpg"
+          }
+        }
+      ]
+    }
+  ]
+}
